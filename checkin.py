@@ -53,10 +53,10 @@ if __name__ == '__main__':
                 success += 1
                 message_status = "签到成功，会员天数 + 1"
             elif status == "Checkin Repeats! Please Try Tomorrow":
-                message_status = "今日已签到"
+                message_status = "今日已签到" + status
             else:
                 fail += 1
-                message_status = "签到失败，请检查..."
+                message_status = "签到失败，请检查..." + status
 
             if leftdays is not None:
                 message_days = f"{leftdays} 天"
